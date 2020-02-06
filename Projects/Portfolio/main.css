@@ -1,18 +1,49 @@
+/* jumbotron */
 .jumbotron {
     background-image: url(./assets/bkgd.jpg);
     background-position: 10% 20%;
+    background-size: cover;
     height: 100vh;
-    opacity: .5;
 
     /* text */
     text-align: center;
-    color: white;
     font-family: Barlow;
-    
 }
 
-.jumbotron h1 {
+#line1 {
+    color: white;
+    font-weight: 500;
+    font-size: 8em;
+}
+
+#line2 {
+    margin-top: 0;
     font-weight: 700;
-    color: #7B549F;
-    opacity: 1;
+    color: white;
+    font-size: 10em;
+}
+
+#line2 span {
+    color: #46E6FF;
+}
+
+.jumbotron p {
+    margin-top: 1em;
+    color: white;
+    font-size: 2em;
+}
+
+.jumbotron button {
+    margin-top: 2em;
+    background-color: transparent;
+    border: 5px solid #46E6FF;
+    color: white;
+    width: 15em;
+    height: 3em;
+    font-weight: 500;
+}
+
+#skills1 {
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
