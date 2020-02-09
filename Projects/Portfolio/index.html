@@ -10,41 +10,73 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" ref="text/css" href="main.css">
 </head>
+
 <body>
 <!--nav-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#jumbo" style="color: #46E6FF; margin-left: 2em">Kaylie McKee</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutMe">About <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#mySkills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 <!--hero-->
+<section id="jumbo">
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4" id="line1">Hello,</h1>
-      <h1 class="display-4" id="line2">I'm <span>Kaylie.</span></h1>
-      <p class="lead">I'm a web developer with a background in graphic and UI design.</p>
-      <button>Learn more about me</button>
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4" id="line1">Hello,</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4" id="line2">I'm <span>Kaylie.</span></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="lead">I'm a web developer with a background in graphic and UI design.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button>Learn more about me</button>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 2em;">
+        <div class="col">
+          <a href="https://www.linkedin.com/in/kayliemckee" target="blank">
+            <img src="./assets/linkedin-3-256.png" style="width: 3em">
+          </a>
+          <a href="https://github.com/mckeekaylie" target="blank">
+            <img src="./assets/github-9-256.png" style="width: 3em">
+          </a>
+        </div>
+      </div>
+
+    </div>
     </div>
   </div>
+</section>
 
-  <div class="container" id="about">
+<section id ="aboutMe">
+  <div class="container">
     <div class="row">
       <div class="col-md">
         <h1>About Me</h1>
@@ -57,7 +89,7 @@
           required for my major and two additional ones for electives. From the very first class, I was fascinated by coding
           and highly interested in pursuing a career as a developer.</p>
         
-        <p>After graduation, I worked full-time as a graphic designer then a UI designer, but I felt like something was 
+        <p>After graduation, I worked full-time as a graphic designer then as a UI designer, but I felt like something was 
            missing in my day-to-day. Two colleagues told me about Eleven Fifty Academy after I informed them of my interest 
            in development. After consideration, I signed up for Eleven Fifty's web development program knowing that while 
            I love design, the passion I have for writing code far surpasses that of design.</p> 
@@ -68,42 +100,43 @@
     </div>
     
   </div>
+</section>
 
-  <hr>
+<section id="mySkills">
 
-  <div class="container" id="skills">
+  <div class="container">
     <h1>My Skills</h1>
-    <div class="row" id="skills1">
-      <div class="col-sm">
+    <div class="row">
+      <div class="col-sm" id="html">
         <img src="assets/html5.png" style="width: 100%">
       </div>
-      <div class="col-sm">
+      <div class="col-sm" id="css">
         <img src="assets/css3.png" style="width: 70%">
       </div>
-      <div class="col-sm">
+      <div class="col-sm" id="js">
         <img src="assets/js.png" style="width: 100%">
       </div>
-      <div class="col-sm">
+      <div class="col-sm" id="boot">
         <img src="assets/bootstrap.png" style="width: 100%">
       </div>
-      <div class="col-sm">
+      <div class="col-sm" id="git">
         <img src="assets/GitHub-Mark-120px-plus.png" style="width: 100%">
       </div>
-      <div class="col-sm">
-        <img src="assets/react.png" style="width: 100%">
+      <div class="col-sm" id="react">
+        <img src="assets/iconfinder_React.js_logo_1174949.png" style="width: 100%">
       </div>
-      <div class="col-sm">
+      <div class="col-sm" id="cc">
         <img src="assets/creativeCloud.png" style="width: 100%">
       </div>
-      <div class="col-sm">
+      <div class="col-sm" id="figma">
         <img src="assets/figma.png" style="width: 70%">
       </div>
     </div>
-
-  <hr>
+  </section>
 
 <!--PORTFOLIO-->
-  <div class="container" id="portfolio">
+<section id="portfolio">
+  <div class="container">
     <h1>Portfolio</h1>
     <!--ROW 1-->
     <div class="row">
@@ -118,7 +151,7 @@
               <h4>KLM Visuals website</h4>
                 <p>KLM Visuals is where I house my design and photography portfolio.
                  I designed and developed the website utilizing Bootstrap.</p>
-                 <a href="https://www.klmvisuals.com" target="blank">> View</a>
+                  <a href="https://www.klmvisuals.com" target="blank">> View</a>
             </div>
           </div>
         </div>
@@ -140,6 +173,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <!--ROW 2-->
@@ -148,7 +182,7 @@
       <div class="col-lg">
         <div class="portfolioItem">
           <a href="https://codepen.io/klmckee/pen/XWJQzdK" target="blank">
-            <img src="./assets/cssKoala.jpg" style="width: 100%; height: 100%">
+            <img src="./assets/cssKoala.jpg" style="width: 100%">
           </a>
 
           <div class="portfolioOverlay" style="background-color: #8146FF;">
@@ -164,7 +198,7 @@
       <div class="col-lg">
         <div class="portfolioItem">
           <a href="https://mckeekaylie.github.io/staticlayout/" target="blank">
-            <img src="./assets/staticLayout.jpg" style="width: 100%; height: 100%">
+            <img src="./assets/static.jpg" style="width: 100%">
           </a>
           <div class="portfolioOverlay">
             <div class="portfolioCaption">
@@ -177,21 +211,54 @@
       </div>
     </div>
   </div>
-
-  <hr>
+</section>
 
 <!--CONTACT-->
-  <div class="container" id="contact">
+<section id="contact">
+  <div class="container">
     <h1>Contact Me</h1>
-  
+
     <form action="https://formspree.io/xknrqbvn" method="POST">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1">
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color: #8146FF; border-color: #8146FF">Submit</button>
+    </form>
+  
+    <!--<form action="https://formspree.io/xknrqbvn" method="POST">
   
     <label> Your email: <input type="text" name="_replyto"></label>
     <label> Your message: <textarea name="message"></textarea></label>
 
     <button type="submit">Send</button>
-    </form>
+    </form>-->
   </div>
+</section>
+
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="https://www.linkedin.com/in/kayliemckee" target="blank">
+          <img src="./assets/linkedin-3-256.png" style="width: 3em">
+        </a>
+        <a href="https://github.com/mckeekaylie" target="blank">
+          <img src="./assets/github-9-256.png" style="width: 3em">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p style="padding-top: 1em">© Copyright 2020, Kaylie McKee</p>
+    </div>
+    </div>
+  </div>
+</section>
     
 <!--SCRIPTS-->
 

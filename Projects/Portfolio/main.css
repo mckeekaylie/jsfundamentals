@@ -1,6 +1,38 @@
 h1 {
     color: #552FA7;
     font-weight: 600;
+    font-family: Barlow;
+}
+
+h2
+h3
+h4
+h5
+h6 {
+    font-family: Barlow;
+}
+
+p {
+    font-family: Barlow;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: Barlow;
+}
+
+nav {
+    background-color: black;
+    z-index: 5;
+}
+
+#navbarNav {
+    margin-left: 55em;
+}
+
+.nav-item {
+    color: white;
 }
 
 /* jumbotron */
@@ -48,23 +80,80 @@ h1 {
     font-weight: 500;
 }
 
-#skills1 {
-    margin-top: 3em;
-    margin-bottom: 3em;
+/* skills */
+
+#mySkills {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 2.5em;
+    background-color: rgba(70, 230, 255, .2);
 }
+
+#mySkills h1 {
+    padding-top: 1em;
+    padding-bottom: 1.2em;
+    text-align: center;
+    color: black;
+    font-size: 14mm;
+}
+
+#html:hover {
+    animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}
+  
+#css:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#js:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#boot:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#git:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#react:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#cc:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#figma:hover {
+    animation: pop 0.3s linear 1;
+}
+
+
+/* portfolio */
 
 #portfolio {
     padding-top: 2em;
+    font-family: Barlow;
 }
 
 #portfolio h1 {
     padding-bottom: 1em;
 }
 
+.portfolioItem {
+    border: 3px solid #f0f0f0;
+}
+
 #portfolioRow2 {
     margin-top: 2em;
 }
 
+/* portfolio overlay */
 .portfolioOverlay {
     position: absolute;
     background-color: #4657FF;
@@ -78,7 +167,7 @@ h1 {
     transition-property: opacity;
     transition-duration: .5s;
     transition-timing-function: linear; 
-    z-index: 999;
+    z-index: 3;
 }
     
 .portfolioOverlay:hover {
@@ -88,30 +177,6 @@ h1 {
 .portfolioOverlay:focus {
     opacity: 1;
 }
-/*
-.portfolioOverlayV2 {
-    position: absolute;
-    background-color: #8146FF;
-    opacity: 0;
-    width: auto;
-    height: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition-property: opacity;
-    transition-duration: .5s;
-    transition-timing-function: linear; 
-    z-index: 999;
-}
-    
-.portfolioOverlayV2:hover {
-    opacity: 1;
-}
-
-.portfolioOverlayV2:focus {
-    opacity: 1;
-}*/
 
 .portfolioCaption {
     padding: 1em;
@@ -150,8 +215,37 @@ h1 {
     text-decoration: underline;
 }
 
-
+/* contact */
 #contact {
-    background-color: #B3FFFC;
+    background-image: url("./assets/footer.jpg");
+    background-size: cover;
     width: 100%;
+    margin-top: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
+
+#contact h1 {
+    text-align: center;
+    color: #8146FF;
+}
+
+form {
+    width: 50%;
+    margin-left: 18em;
+    padding-top: 2em;
+}
+
+#exampleFormControlTextarea1 {
+    height: 8em;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #4657FF;
+    color: white;
+}
+
