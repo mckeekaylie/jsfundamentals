@@ -40,6 +40,7 @@ nav {
     background-image: url(./assets/bkgd.jpg);
     background-position: 10% 20%;
     background-size: cover;
+    width: 100%;
     height: 100vh;
 
     /* text */
@@ -232,7 +233,7 @@ nav {
 
 form {
     width: 50%;
-    margin-left: 18em;
+    margin: auto;
     padding-top: 2em;
 }
 
@@ -249,3 +250,84 @@ form {
     color: white;
 }
 
+/* media queries */
+@media (max-width: 576px) {
+
+.jumbotron {
+    padding-top: 5em;
+    background-size: cover;
+    width: 100%;
+    height: 115vh;
+}
+
+#line1 {
+    font-size: 4em;
+}
+    
+#line2 {
+    margin-top: 0;
+    font-size: 8em;
+ }
+    
+#line2 span {
+    color: #46E6FF;
+}
+    
+.jumbotron p {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+    
+.jumbotron button {
+    margin-top: 1em;
+}
+
+#mySkills {
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+#mySkills h1 {
+    padding-bottom: .5em;
+}
+    
+#html {
+    width: 32%;
+    padding-bottom: 1em;
+}
+
+#css {
+    width: 32%;
+}
+
+#js {
+    width: 32%;
+}
+
+#boot {
+    width: 32%;
+    padding-bottom: 1em;
+}
+
+#git {
+    width: 32%;
+}
+
+#react {
+    width: 32%;
+}
+
+#cc {
+    width: 32%
+}
+
+#figma {
+    width: 32%;
+}
+
+
+/*@media (max-width: 768px) {
+
+/*@media (min-width: 992px) {
+
+/*@media (min-width: 1200px) {
