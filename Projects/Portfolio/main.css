@@ -1,3 +1,8 @@
+h1 {
+    color: #552FA7;
+    font-weight: 600;
+}
+
 /* jumbotron */
 .jumbotron {
     background-image: url(./assets/bkgd.jpg);
@@ -46,4 +51,107 @@
 #skills1 {
     margin-top: 3em;
     margin-bottom: 3em;
+}
+
+#portfolio {
+    padding-top: 2em;
+}
+
+#portfolio h1 {
+    padding-bottom: 1em;
+}
+
+#portfolioRow2 {
+    margin-top: 2em;
+}
+
+.portfolioOverlay {
+    position: absolute;
+    background-color: #4657FF;
+    opacity: 0;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: linear; 
+    z-index: 999;
+}
+    
+.portfolioOverlay:hover {
+    opacity: 1;
+}
+
+.portfolioOverlay:focus {
+    opacity: 1;
+}
+/*
+.portfolioOverlayV2 {
+    position: absolute;
+    background-color: #8146FF;
+    opacity: 0;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: linear; 
+    z-index: 999;
+}
+    
+.portfolioOverlayV2:hover {
+    opacity: 1;
+}
+
+.portfolioOverlayV2:focus {
+    opacity: 1;
+}*/
+
+.portfolioCaption {
+    padding: 1em;
+    color: white;
+    opacity: 0;
+    font-size: 6mm;
+    text-align: center;
+}
+
+.portfolioCaption:hover {
+    opacity: 1;
+}
+
+.portfolioCaption:focus {
+    opacity: 1;
+}
+
+.portfolioCaption p {
+    color: white;
+    padding: 2%;
+}
+
+.portfolioCaption h4 {
+    font-size: 8mm;
+    font-weight: 700;
+}
+
+.portfolioCaption a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 6mm;
+}
+
+.portfolioCaption a:hover {
+    text-decoration: underline;
+}
+
+
+#contact {
+    background-color: #B3FFFC;
+    width: 100%;
 }
