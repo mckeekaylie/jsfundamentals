@@ -9,14 +9,14 @@ const searchTerm = document.querySelector('.search');
 const searchForm = document.querySelector('form');
 const submitBtn = document.querySelector('.submit');
 
+let entry = document.getElementById('search');
+
 searchForm.addEventListener('submit', fetchResults); 
-
-
 
 function fetchResults(e) {
     e.preventDefault();
 
-    url = baseURL + '?ts=1&apikey=' + key + '&hash=' + hash;
+    url = baseURL + '?ts=1&limit=1493&apikey=' + key + '&hash=' + hash;
 
     fetch(url).then(function(result){
         return result.json();
@@ -26,6 +26,15 @@ function fetchResults(e) {
 }
 
 function displayResults(json) {
+   /*for (i=0; i < json.data.results.length; i++){
+        if (json.data.results[i].name === entry.value){
+            console.log(json.data.results[i].name);
+        } else {
+            console.log(json);
+        }
+    }*/
     console.log(json);
+    //console.log(json.data.results[1].name);
+    console.log(entry.value);
 }
 
