@@ -1,20 +1,15 @@
+/* TYPE STYLING FOR THE ENTIRE DOCUMENT */
+
+body {
+    font-family: Barlow;
+}
+
 h1 {
     color: #552FA7;
     font-weight: 600;
-    font-family: Barlow;
 }
 
-h2
-h3
-h4
-h5
-h6 {
-    font-family: Barlow;
-}
-
-p {
-    font-family: Barlow;
-}
+/* NAVBAR */
 
 .navbar {
     position: fixed;
@@ -28,24 +23,26 @@ nav {
 }
 
 #navbarNav {
-    margin-left: 55em;
+    margin-left: 66vw;
 }
 
-.nav-item {
+.nav-item.active {
     color: white;
 }
+/*
+.nav-item > .active > a {
+    color: white;
+}*/
 
-/* jumbotron */
+/* JUMBOTRON */
 .jumbotron {
     background-image: url(./assets/bkgd.jpg);
     background-position: 10% 20%;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-
     /* text */
     text-align: center;
-    font-family: Barlow;
 }
 
 #line1 {
@@ -81,23 +78,31 @@ nav {
     font-weight: 500;
 }
 
-/* skills */
+/* ABOUT */
+
+#aboutMe {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+}
+/* SKILLS */
 
 #mySkills {
     margin-top: 2em;
     margin-bottom: 2em;
-    padding-bottom: 2.5em;
+    padding-top: 3vh;
+    padding-bottom: 3em;
     background-color: rgba(70, 230, 255, .2);
 }
 
 #mySkills h1 {
-    padding-top: 1em;
-    padding-bottom: 1.2em;
+    padding-top: .7em;
+    padding-bottom: .5em;
     text-align: center;
     color: black;
     font-size: 14mm;
 }
 
+/* SKILLS ANIMATION */
 #html:hover {
     animation: pop 0.3s linear 1;
 }
@@ -135,11 +140,11 @@ nav {
 }
 
 
-/* portfolio */
+/* PORTFOLIO */
 
 #portfolio {
-    padding-top: 2em;
-    font-family: Barlow;
+    padding-top: 8vh;
+    padding-bottom: 6vh;
 }
 
 #portfolio h1 {
@@ -154,7 +159,7 @@ nav {
     margin-top: 2em;
 }
 
-/* portfolio overlay */
+/* PORTFOLIO OVERLAY */
 .portfolioOverlay {
     position: absolute;
     background-color: #4657FF;
@@ -180,6 +185,8 @@ nav {
 }
 
 .portfolioCaption {
+    width: 100%;
+    height: 100%;
     padding: 1em;
     color: white;
     opacity: 0;
@@ -216,7 +223,7 @@ nav {
     text-decoration: underline;
 }
 
-/* contact */
+/* CONTACT */
 #contact {
     background-image: url("./assets/footer.jpg");
     background-size: cover;
@@ -241,7 +248,7 @@ form {
     height: 8em;
 }
 
-/* footer */
+/* FOOTER */
 #footer {
     text-align: center;
     padding-top: 2em;
@@ -250,13 +257,11 @@ form {
     color: white;
 }
 
-/* media queries */
+/* MEDIA QUERIES */
 @media (max-width: 576px) {
 
 .jumbotron {
     padding-top: 5em;
-    background-size: cover;
-    width: 100%;
     height: 115vh;
 }
 
