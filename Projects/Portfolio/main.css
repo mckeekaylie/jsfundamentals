@@ -1,5 +1,4 @@
 /* TYPE STYLING FOR THE ENTIRE DOCUMENT */
-
 body {
     font-family: Barlow;
 }
@@ -10,7 +9,6 @@ h1 {
 }
 
 /* NAVBAR */
-
 .navbar {
     position: fixed;
     width: 100%;
@@ -23,19 +21,12 @@ nav {
 }
 
 #navbarNav {
-    margin-left: 66vw;
+    margin-left: 40%;
 }
-
-.nav-item.active {
-    color: white;
-}
-/*
-.nav-item > .active > a {
-    color: white;
-}*/
 
 /* JUMBOTRON */
 .jumbotron {
+    position:relative;
     background-image: url(./assets/bkgd.jpg);
     background-position: 10% 20%;
     background-size: cover;
@@ -45,7 +36,20 @@ nav {
     text-align: center;
 }
 
+#jumboContent {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
 #line1 {
+    display: block;
+    margin: auto;
     color: white;
     font-weight: 500;
     font-size: 8em;
@@ -79,13 +83,17 @@ nav {
 }
 
 /* ABOUT */
-
 #aboutMe {
     padding-top: 10vh;
     padding-bottom: 8vh;
 }
-/* SKILLS */
 
+#aboutMe img {
+    float: right;
+    width: 90%;
+}
+
+/* SKILLS */
 #mySkills {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -141,7 +149,6 @@ nav {
 
 
 /* PORTFOLIO */
-
 #portfolio {
     padding-top: 8vh;
     padding-bottom: 6vh;
@@ -152,7 +159,7 @@ nav {
 }
 
 .portfolioItem {
-    border: 3px solid #f0f0f0;
+    border: 3px solid #E2E2E2;
 }
 
 #portfolioRow2 {
@@ -258,81 +265,94 @@ form {
 }
 
 /* MEDIA QUERIES */
+
+/* 576PX */
 @media (max-width: 576px) {
 
-.jumbotron {
-    padding-top: 5em;
-    height: 115vh;
-}
+    /* JUMBOTRON */
+    .jumbotron {
+        padding-top: 5em;
+        width: 100vw;
+        height: 123vh;
+    }
 
-#line1 {
-    font-size: 4em;
-}
+    #line1 {
+        font-size: 4em;
+    }
     
-#line2 {
-    margin-top: 0;
-    font-size: 8em;
- }
-    
-#line2 span {
-    color: #46E6FF;
-}
-    
-.jumbotron p {
-    margin-top: 1em;
-    font-size: 1.5em;
-}
-    
-.jumbotron button {
-    margin-top: 1em;
-}
+    #line2 {
+        margin-top: 0;
+        font-size: 6em;
+    }
+        
+    #line2 span {
+        color: #46E6FF;
+    }
+        
+    .jumbotron p {
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+        
+    .jumbotron button {
+        margin-top: 1em;
+    }
 
-#mySkills {
-    padding-left: 2em;
-    padding-right: 1em;
-}
+    /* ABOUT */
+    #aboutMe {
+        padding-top: 1em;
+    }
 
-#mySkills h1 {
-    padding-bottom: .5em;
-}
-    
-#html {
-    width: 32%;
-    padding-bottom: 1em;
-}
+    #aboutMe img {
+        width: 100%;
+    }
 
-#css {
-    width: 32%;
-}
+    /* SKILLS */
+    #mySkills {
+        padding-left: 2em;
+        padding-right: 1em;
+    }
 
-#js {
-    width: 32%;
-}
+    #mySkills h1 {
+        padding-bottom: .5em;
+    }
+        
+    #html {
+        width: 25%;
+        padding-bottom: 1em;
+    }
 
-#boot {
-    width: 32%;
-    padding-bottom: 1em;
-}
+    #css {
+        width: 25%;
+    }
 
-#git {
-    width: 32%;
-}
+    #js {
+        width: 25%;
+    }
 
-#react {
-    width: 32%;
-}
+    #boot {
+        width: 25%;
+        padding-bottom: 1em;
+    }
 
-#cc {
-    width: 32%
-}
+    #git {
+        width: 25%;
+    }
 
-#figma {
-    width: 32%;
-}
+    #react {
+        width: 25%;
+    }
 
+    #cc {
+        width: 25%
+    }
 
-/*@media (max-width: 768px) {
+    #figma {
+        width: 25%;
+    }
 
-/*@media (min-width: 992px) {
-
-/*@media (min-width: 1200px) {
+    /* PORTFOLIO */
+    #portfolio {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
